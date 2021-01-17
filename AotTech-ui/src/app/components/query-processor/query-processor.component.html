@@ -1,0 +1,32 @@
+<h2>Query Processor</h2>
+<form [formGroup]="queryProcessorForm">
+    <div class="form-group">
+        <label>Query</label>
+        <input type="text" formControlName="query" class="form-control" />
+        <!-- <div *ngIf="submitted && f.username.errors" class="invalid-feedback">
+            <div *ngIf="f.username.errors.required">Query is required</div>
+        </div> -->
+    </div>
+    <div class="form-group">
+        <label>Mesage</label>
+        <textarea formControlName="message" class="form-control"></textarea>
+        <!-- <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+            <div *ngIf="f.password.errors.required">Password is required</div>
+        </div> -->
+    </div>
+    <div class="form-group">
+        <button class="btn btn-primary" (click) ="search()">
+            Search
+        </button>
+    </div>
+<br/>
+<br/>
+<br/>
+    <div class="form-group">
+        <label>Result</label>
+        <textarea formControlName="result" class="form-control" disabled = "true" ></textarea>
+        <!-- <div *ngIf="submitted && f.password.errors" class="invalid-feedback">
+            <div *ngIf="f.password.errors.required">Password is required</div>
+        </div> -->
+    </div>
+</form>
